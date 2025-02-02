@@ -1,0 +1,126 @@
+.solar-solutions {
+  display: flex;
+  padding: 80px 150px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/************************* Solar Solutions Text *************************/
+.solar-solutions-text {
+  display: flex;
+  width: 936px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.solar-solutions-text h1 {
+  color: #101828;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: -0.84px;
+}
+
+.solar-solutions-text p {
+  color: #475467;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/************************* Solar Solutions Cards *************************/
+.solar-solutions-cards {
+  display: flex;
+  max-width: 1140px;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.solar-solutions-card {
+  display: flex;
+  width: 359px;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.solar-solutions-card > img {
+  height: 240px;
+}
+
+.card-content {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.card-content h3 {
+  color: #101828;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.card-content p {
+  height: 72px;
+  width: 327px;
+  color: #475467;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  text-overflow: ellipsis;
+}
+
+.card-content button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-content button span {
+  color: #3cab90;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.card-content button:hover span {
+  text-shadow: 0px 0px 5px #55eec8;
+}
+
+.card-content button img {
+  width: 20px;
+  height: 20px;
+}
+
+/************************* Media Queries *************************/
+/* Media Query for Mobile Devices */
+@media (max-width: 1250px) {
+  .solar-solutions {
+    padding: 16px 25px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .solar-solutions-cards {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .solar-solutions-text {
+    width: 100%;
+  }
+}

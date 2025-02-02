@@ -1,0 +1,120 @@
+header {
+  display: flex;
+  padding: 16px 150px;
+  justify-content: space-between;
+  align-items: center;
+  background: #0b9586;
+  letter-spacing: 0.937px;
+}
+
+/************************* Logo *************************/
+header .logo {
+  width: 157px;
+  height: 54px;
+  background: url("../assets/images/placeholder.png") no-repeat center center /
+    cover;
+  mix-blend-mode: multiply;
+}
+
+/************************* Links *************************/
+nav {
+  display: flex;
+  gap: 8px;
+  min-width: 450px;
+}
+
+nav a {
+  display: flex;
+  padding: 8px 0;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  flex: 1;
+  transition: all 0.3s ease;
+}
+
+nav a > span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+nav a:hover {
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.06);
+}
+
+nav a:hover > span {
+  text-shadow: 0px 0px 3px #fff;
+}
+
+/************************* Contact *************************/
+.contact-ctn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.contact > .call-us {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contact > .number {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+/************************* Media Queries *************************/
+.mobile-first-row {
+  display: none;
+}
+@media screen and (max-width: 1250px) {
+  header {
+    padding: 16px 25px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .logo,
+  .contact-ctn {
+    display: none;
+  }
+
+  .mobile-first-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .mobile-first-row .logo,
+  .mobile-first-row .contact-ctn {
+    display: block;
+  }
+}

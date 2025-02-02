@@ -1,0 +1,243 @@
+.testimonials {
+  display: flex;
+  padding: 80px 150px;
+  gap: 32px;
+}
+
+/************************* Testimonials Text *************************/
+.testimonials-text {
+  display: flex;
+  width: 450px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+  flex-shrink: 0;
+}
+
+.testimonials-text img {
+  width: 58.333px;
+  height: 48px;
+  fill: #3cab90;
+}
+
+.testimonials-text h1 {
+  color: #1c1c1c;
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+.testimonials-text p {
+  color: #1c1c1c;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+/*********************** Testimonials Carousel ***********************/
+.testimonials-carousel {
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 87px;
+  flex: 1 0 0;
+  border-radius: 24px;
+  background: rgba(60, 171, 144, 0.06);
+}
+
+.testimonials-carousel-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  align-self: stretch;
+}
+
+.what-they-say {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 52px;
+  flex: 1 0 0;
+}
+
+.what-they-say-title {
+  color: #3cab90;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.what-they-say-text-ctn {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 215px;
+}
+
+.what-they-say-text {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  text-wrap: wrap;
+  color: #101828;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 150%;
+  transition: all 0.3s ease-in-out;
+}
+
+.what-they-say-text.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.indicator {
+  width: 72px;
+  height: 8px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.indicator-dot {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #d9d9d9;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.indicator-dot.active {
+  background: #6b6b6b;
+}
+
+.testimonials-carousel-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.testimonials-carousel-bottom-left {
+  opacity: 0;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  width: 70%;
+  width: 100%;
+  position: absolute;
+  gap: 8px;
+}
+
+.testimonials-carousel-bottom-left.active {
+  opacity: 1;
+}
+
+.person-ctn {
+  display: inline-flex;
+  align-items: center;
+}
+
+.testimonials-carousel-bottom-left img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+
+.testimonials-carousel-bottom-left-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+}
+
+.testimonials-carousel-bottom-left-text h5 {
+  color: #1c1c1c;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.testimonials-carousel-bottom-left-text p {
+  color: #1c1c1c;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.testimonials-carousel-bottom-right {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.carousel-arrow-left,
+.carousel-arrow-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background: #fff;
+  border: 1px solid #1c1c1c;
+  border-radius: 24px;
+  z-index: 1;
+}
+
+.carousel-arrow-left svg,
+.carousel-arrow-right svg {
+  fill: #1c1c1c;
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel-arrow-left:hover,
+.carousel-arrow-right:hover {
+  background: #1c1c1c;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.carousel-arrow-left:hover svg,
+.carousel-arrow-right:hover svg {
+  fill: #fff;
+}
+
+/************************* Media Queries *************************/
+@media screen and (max-width: 1400px) {
+  .testimonials {
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (max-width: 1250px) {
+  .testimonials {
+    padding: 16px 25px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .what-they-say-text-ctn {
+    height: 300px;
+  }
+
+  .person-ctn {
+    align-self: flex-start;
+  }
+
+  .testimonials-carousel-bottom-right {
+    padding-top: 60px;
+    align-self: flex-end;
+  }
+}

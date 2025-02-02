@@ -1,0 +1,160 @@
+.mission {
+  display: flex;
+  padding: 80px 150px;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 23px;
+}
+
+/************************* Mission Content *************************/
+.mission-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 23px;
+}
+
+/************************* Mission Text *************************/
+.mission-text {
+  display: flex;
+  width: 594px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.mission-text h1 {
+  align-self: stretch;
+  color: #101828;
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: -0.84px;
+}
+
+.mission-text p {
+  align-self: stretch;
+  color: #475467;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/************************* Mission Points *************************/
+.mission-points {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.mission-point {
+  display: flex;
+  width: 498px;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 30px;
+}
+
+.mission-point-number {
+  color: #84bd3a;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.mission-point-text {
+  width: 456px;
+  color: #101828;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/************************* Mission Image *************************/
+.mission-image {
+  position: relative;
+  display: inline-block;
+}
+
+.mission-image > img {
+  width: 469px;
+  height: 552px;
+  flex-shrink: 0;
+  border-radius: 12px;
+}
+
+.highlight {
+  display: flex;
+  height: 160px;
+  width: 200px;
+  padding: 24px 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+  border-radius: 12px;
+  background: #ffbb1c;
+  position: absolute;
+  bottom: 3%;
+  left: 15%;
+  transform: translateX(-50%);
+}
+
+.highlight p {
+  align-self: stretch;
+  color: #2a3334;
+  font-family: Akazan;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.937px;
+}
+
+.highlight img {
+  width: 90px;
+  height: 90px;
+}
+
+/************************* Media Queries *************************/
+/* Tablet */
+@media screen and (max-width: 1250px) {
+  .mission {
+    padding: 16px 25px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;  
+  }
+
+  .mission-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .mission-content {
+    align-items: center;
+  }
+
+  .mission-points {
+    align-items: center;
+  }
+
+  .mission-point {
+    width: auto;
+  }
+  .mission-point-text {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+    .mission-text {
+      width: auto;
+    }
+
+    .mission-image {
+      width: 80%;
+    }
+
+    .mission-image > img {
+      width: 100%;
+      height: auto;
+    }
+}

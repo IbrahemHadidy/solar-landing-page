@@ -1,0 +1,192 @@
+<section class="testimonials">
+  <!---- Testimonials Text ----->
+  <div class="testimonials-text">
+    <img src="./assets/images/double-quotes.svg" alt="double-quotes" />
+    <h1>What they say about WOC</h1>
+    <p>
+      Our customers love the work we do! Here's what some of them have to say
+      about their experience with WOC. We take pride in delivering outstanding
+      results and ensuring our clients are always satisfied.
+    </p>
+  </div>
+
+  <!---- Testimonials Carousel ----->
+  <div
+    class="testimonials-carousel"
+    onmouseenter="stopInterval()"
+    onmouseleave="startInterval()"
+  >
+    <div class="testimonials-carousel-top">
+      <div class="what-they-say">
+        <p class="what-they-say-title">What they say</p>
+
+        <div class="what-they-say-text-ctn">
+          <p id="what-they-say-1" class="what-they-say-text active">
+            “WOC was the best decision I made for my career. Their hands-on
+            approach and real-world projects gave me the confidence to excel in
+            my field. I landed my dream job within months!”
+          </p>
+
+          <p id="what-they-say-2" class="what-they-say-text">
+            “Studying at WOC is a game-changer! The curriculum is not only
+            comprehensive but also adaptable to my specific learning needs. I’ve
+            grown so much professionally since I started.”
+          </p>
+
+          <p id="what-they-say-3" class="what-they-say-text">
+            “WOC helped me transition into a new career with practical and
+            up-to-date skills. The hands-on experience and expert guidance from
+            instructors made all the difference.”
+          </p>
+
+          <p id="what-they-say-4" class="what-they-say-text">
+            “Thanks to WOC, I was able to sharpen my design skills and land my
+            dream job. The training was practical, and I’m now more confident
+            than ever in my abilities.”
+          </p>
+
+          <p id="what-they-say-5" class="what-they-say-text">
+            “The personalized approach at WOC made my learning experience so
+            much more effective. I was able to learn at my own pace and gain a
+            deep understanding of the material.”
+          </p>
+        </div>
+      </div>
+
+      <div class="indicator">
+        <div
+          id="indicator-dot-1"
+          class="indicator-dot active"
+          onclick="changeSlide(1)"
+        ></div>
+
+        <div
+          id="indicator-dot-2"
+          class="indicator-dot"
+          onclick="changeSlide(2)"
+        ></div>
+
+        <div
+          id="indicator-dot-3"
+          class="indicator-dot"
+          onclick="changeSlide(3)"
+        ></div>
+
+        <div
+          id="indicator-dot-4"
+          class="indicator-dot"
+          onclick="changeSlide(4)"
+        ></div>
+
+        <div
+          id="indicator-dot-5"
+          class="indicator-dot"
+          onclick="changeSlide(5)"
+        ></div>
+      </div>
+    </div>
+
+    <div class="testimonials-carousel-bottom">
+      <div class="person-ctn">
+        <div
+          id="testimonials-person-1"
+          class="testimonials-carousel-bottom-left active"
+        >
+          <img
+            src="./assets/images/testimony-person-1.png"
+            alt="testimony-person-1"
+          />
+          <div class="testimonials-carousel-bottom-left-text">
+            <h5>Orion Larkspur</h5>
+            <p>Software Engineer at Novabyte Systems</p>
+          </div>
+        </div>
+
+        <div
+          id="testimonials-person-2"
+          class="testimonials-carousel-bottom-left"
+        >
+          <img
+            src="./assets/images/testimony-person-2.png"
+            alt="testimony-person-2"
+          />
+          <div class="testimonials-carousel-bottom-left-text">
+            <h5>Zephyr Moonstone</h5>
+            <p>Senior Designer at NebulaWorks</p>
+          </div>
+        </div>
+
+        <div
+          id="testimonials-person-3"
+          class="testimonials-carousel-bottom-left"
+        >
+          <img
+            src="./assets/images/testimony-person-3.png"
+            alt="testimony-person-3"
+          />
+          <div class="testimonials-carousel-bottom-left-text">
+            <h5>Jasper Windrider</h5>
+            <p>Product Innovator at Skylight Dynamics</p>
+          </div>
+        </div>
+
+        <div
+          id="testimonials-person-4"
+          class="testimonials-carousel-bottom-left"
+        >
+          <img
+            src="./assets/images/testimony-person-4.png"
+            alt="testimony-person-4"
+          />
+          <div class="testimonials-carousel-bottom-left-text">
+            <h5>Felix Starlight</h5>
+            <p>Lead Engineer at Hypernova Labs</p>
+          </div>
+        </div>
+
+        <div
+          id="testimonials-person-5"
+          class="testimonials-carousel-bottom-left"
+        >
+          <img
+            src="./assets/images/testimony-person-5.png"
+            alt="testimony-person-5"
+          />
+          <div class="testimonials-carousel-bottom-left-text">
+            <h5>Caden Starfield</h5>
+            <p>Chief Strategy Officer at Quantum Innovations</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials-carousel-bottom-right">
+        <button class="carousel-arrow-left" onclick="previousSlide()">
+          <svg
+            width="12"
+            height="22"
+            viewBox="0 0 12 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.3738 21.0401C11.7288 20.6851 11.7611 20.1295 11.4706 19.7381L11.3738 19.6259L2.74799 10.9997L11.3738 2.37345C11.7288 2.01843 11.7611 1.46288 11.4706 1.07139L11.3738 0.959236C11.0187 0.604214 10.4632 0.571939 10.0717 0.862411L9.95955 0.959236L0.626218 10.2926C0.271195 10.6476 0.23892 11.2031 0.529393 11.5946L0.626218 11.7068L9.95955 21.0401C10.3501 21.4306 10.9832 21.4306 11.3738 21.0401Z"
+            />
+          </svg>
+        </button>
+        <button class="carousel-arrow-right" onclick="nextSlide()">
+          <svg
+            width="12"
+            height="22"
+            viewBox="0 0 12 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.626237 21.0401C0.271215 20.6851 0.23894 20.1295 0.529412 19.7381L0.626237 19.6259L9.25201 10.9997L0.626237 2.37345C0.271215 2.01843 0.23894 1.46288 0.529412 1.07139L0.626237 0.959236C0.981259 0.604214 1.53681 0.571939 1.92829 0.862411L2.04045 0.959236L11.3738 10.2926C11.7288 10.6476 11.7611 11.2031 11.4706 11.5946L11.3738 11.7068L2.04045 21.0401C1.64993 21.4306 1.01676 21.4306 0.626237 21.0401Z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,99 @@
+.cta {
+  display: flex;
+  padding: 150px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  background: url("../assets/images/cta-bg.png") no-repeat center center / cover;}
+
+.cta-content {
+  display: flex;
+  width: 678px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+
+/************************* CTA Text *************************/
+.cta-content h1 {
+  
+  color: #fff;
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: -0.84px;
+}
+
+.cta-content p {
+  
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+/************************* CTA Button *************************/
+.cta-btn {
+  display: flex;
+  padding: 12px 34px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  border-radius: 109px;
+  background: #ffbb1c;
+}
+
+.cta-btn span {
+  color: #2a3334;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.12px;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  background: #fff;
+}
+
+.cta-btn span:hover {
+  color: #ffbb1c;
+}
+
+
+/************************* Media Queries *************************/
+@media (max-width: 1250px) {
+  .cta {
+    padding: 150px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta {
+    padding: 50px;
+  }
+
+  .cta .cta-content {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .cta .cta-content h1 {
+    font-size: 32px;
+    letter-spacing: -0.64px;
+  }
+
+  .cta .cta-content p {
+    font-size: 16px;
+  }
+
+  .cta .cta-content .cta-btn {
+    padding: 10px 20px;
+  }
+
+  .cta .cta-content .cta-btn span {
+    font-size: 12px;
+    letter-spacing: 0.96px;
+  }
+}

@@ -1,0 +1,204 @@
+footer {
+  display: flex;
+  padding: 80px 150px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 54px;
+  background: #283646;
+  letter-spacing: 0.3px;
+}
+
+/************************* First Row *************************/
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 38px;
+}
+
+.footer-links-logo {
+  width: 185px;
+  height: 64px;
+  background: url("../assets/images/placeholder.png") no-repeat center center / cover;  mix-blend-mode: multiply;
+}
+
+.footer-links-list {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  min-width: 500px;
+}
+
+.footer-links-list a {
+  display: flex;
+  white-space: nowrap;
+}
+
+.footer-links-list a span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.footer-links-list a span:hover {
+  text-shadow: 0px 0px 3px #fff;
+}
+
+.footer-subscription {
+  display: flex;
+  padding: 0px 1px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-subscription h4 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.footer-subscription form {
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+  border-radius: 38px;
+  border: 1px solid #b3bdc7;
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.footer-subscription input {
+  width: 239px;
+  color: #92989f;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  border: none;
+  background: transparent;
+}
+
+.footer-subscription input:focus {
+  outline: none;
+  border: none;
+  color: #fff;
+}
+
+.footer-subscription button {
+  display: flex;
+  padding: 12px 34px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 109px;
+  background: #ffbb1c;
+}
+
+.footer-subscription button span {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+
+.footer-subscription button:hover {
+  background: #fff;
+}
+
+.footer-subscription button:hover span {
+  color: #ffbb1c;
+}
+
+.break {
+  height: 2px;
+  width: 100%;
+  background-color: #71777d;
+  border: none;
+}
+
+/************************* Second Row *************************/
+.footer-legal {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #92989f;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.legal-links {
+  font-style: normal;
+  letter-spacing: 0.257px;
+}
+
+.legal-links a {
+  color: #92989f;
+}
+
+.legal-links a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: right;
+  letter-spacing: 0.257px;
+}
+
+/************************* Media Queries *************************/
+@media screen and (max-width: 1250px) {
+  footer {
+    padding: 16px 25px;
+    gap: 20px;
+  }
+
+  .footer-content {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  footer {
+    gap: 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .footer-links {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .footer-legal {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .footer-links {
+    width: 100%;
+  }
+
+  .footer-links-list {
+    width: 100%;
+    min-width: 100%;
+    gap: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

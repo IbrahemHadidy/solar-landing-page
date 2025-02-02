@@ -1,0 +1,56 @@
+/************************* Imports *************************/
+@import url("./header.css");
+@import url("./footer.css");
+@import url("./hero.css");
+@import url("./mission.css");
+@import url("./cta.css");
+@import url("./solar-solutions.css");
+@import url("./our-approach.css");
+@import url("./features.css");
+@import url("./our-values.css");
+@import url("./testimonials.css");
+
+/************************* Fonts *************************/
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/sans-serif@1.0.0/src/sans-serif.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@font-face {
+  font-family: "Akazan";
+  src: url("../assets/fonts/Akazan_Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button span {
+  transition: all 0.2s ease-in-out;
+}

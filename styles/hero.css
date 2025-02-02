@@ -1,0 +1,205 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 95vh;
+  gap: 32px;
+  background: linear-gradient(
+      267deg,
+      rgba(0, 0, 0, 0.7) 2.2%,
+      rgba(0, 0, 0, 0.18) 58.17%
+    ),
+    url("../assets/images/hero-bg.png") center / cover no-repeat;
+}
+
+/************************* Progress Bar *************************/
+.progress-ctn {
+  padding: 70px 150px 0;
+  width: 333px;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.progress-left,
+.progress-right {
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Akazan;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.937px;
+}
+
+.progress-ctn progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  width: 310px;
+  height: 3.75px;
+  transition: all 0.3s ease-in-out;
+}
+
+.progress-ctn progress::-webkit-progress-bar {
+  background-color: #575757;
+  transition: all 0.3s ease-in-out;
+}
+
+.progress-ctn progress[value]::-webkit-progress-value {
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.progress-ctn progress::-moz-progress-bar {
+  background-color: #575757;
+  transition: all 0.3s ease-in-out;
+}
+
+.progress-ctn progress[value]::-moz-progress-bar {
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+/************************* Hero Content *************************/
+.hero-content-ctn {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 100px;
+  gap: 24px;
+}
+
+.hero-content {
+  opacity: 0;
+  display: flex;
+  padding: 0 150px;
+  width: 729px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  position: absolute;
+  transition: opacity 1s ease, all 0.3s ease-in-out;
+}
+
+.hero-content.active {
+  opacity: 1;
+}
+
+.hero-content h1 {
+  color: #fff;
+  font-size: 52px;
+  font-weight: 600;
+  letter-spacing: -1.04px;
+}
+
+.hero-content p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.hero-btns {
+  display: flex;
+  padding-bottom: 150px;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.hero-btns button {
+  display: flex;
+  padding: 12px 34px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 109px;
+}
+
+.hero-btns button span {
+  color: #000000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.12px;
+}
+
+.hero-btns .call {
+  background: #3cab90;
+  color: #fff;
+}
+
+.hero-btns .call-back {
+  background: #ffbb1c;
+  color: #000000;
+}
+
+.hero-btns .call:hover,
+.hero-btns .call-back:hover {
+  background: #fff;
+}
+
+.hero-btns .call:hover span {
+  color: #236353;
+}
+
+.hero-btns .call-back:hover span {
+  color: #694a01;
+}
+
+/************************* Media Queries *************************/
+@media screen and (max-height: 800px) {
+  .hero-content-ctn {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .progress-ctn {
+    padding: 40px 25px 0;
+  }
+  .hero-content {
+    padding: 16px 25px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .hero {
+    align-items: center;
+  }
+
+  .progress-ctn {
+    padding: 40px 0 0;
+  }
+
+  .hero-content-ctn {
+    padding-top: 0;
+    align-items: center;
+  }
+
+  .hero-content {
+    padding: 0;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero-content {
+    width: calc(100% - 20px);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero {
+    height: 120vh;
+  }
+}
