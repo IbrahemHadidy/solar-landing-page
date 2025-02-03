@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   height: 95vh;
-  gap: 32px;
+  gap: 2rem;
   background: linear-gradient(
       267deg,
       rgba(0, 0, 0, 0.7) 2.2%,
@@ -14,13 +14,13 @@
 
 /************************* Progress Bar *************************/
 .progress-ctn {
-  padding: 70px 150px 0;
-  width: 333px;
-  height: 25px;
+  padding: 4.375rem 9.375rem 0;
+  width: 20.8125rem;
+  height: 1.5625rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 8px;
+  gap: .5rem;
 }
 
 .progress-left,
@@ -28,9 +28,9 @@
   flex-shrink: 0;
   color: #fff;
   font-family: Akazan;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
-  letter-spacing: 0.937px;
+  letter-spacing: .0586rem;
 }
 
 .progress-ctn progress {
@@ -39,8 +39,8 @@
   appearance: none;
   border: none;
   border-radius: 0;
-  width: 310px;
-  height: 3.75px;
+  width: 19.375rem;
+  height: .2344rem;
   transition: all 0.3s ease-in-out;
 }
 
@@ -73,18 +73,18 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding-top: 100px;
-  gap: 24px;
+  padding-top: 6.25rem;
+  gap: 1.5rem;
 }
 
 .hero-content {
   opacity: 0;
   display: flex;
-  padding: 0 150px;
-  width: 729px;
+  padding: 0 9.375rem;
+  width: 45.5625rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 1.5rem;
   position: absolute;
   transition: opacity 1s ease, all 0.3s ease-in-out;
 }
@@ -95,40 +95,40 @@
 
 .hero-content h1 {
   color: #fff;
-  font-size: 52px;
+  font-size: 3.25rem;
   font-weight: 600;
-  letter-spacing: -1.04px;
+  letter-spacing: -0.065rem;
 }
 
 .hero-content p {
   color: #fff;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 1.875rem;
 }
 
 .hero-btns {
   display: flex;
-  padding-bottom: 150px;
+  padding-bottom: 9.375rem;
   align-items: flex-start;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .hero-btns button {
   display: flex;
-  padding: 12px 34px;
+  padding: .75rem 2.125rem;
   justify-content: center;
   align-items: center;
-  border-radius: 109px;
+  border-radius: 6.8125rem;
 }
 
 .hero-btns button span {
   color: #000000;
-  font-size: 14px;
+  font-size: .875rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 1.12px;
+  letter-spacing: .07rem;
 }
 
 .hero-btns .call {
@@ -155,28 +155,28 @@
 }
 
 /************************* Media Queries *************************/
-@media screen and (max-height: 800px) {
+@media screen and (max-height: 50rem) {
   .hero-content-ctn {
     padding-top: 0;
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 78.125rem) {
   .progress-ctn {
-    padding: 40px 25px 0;
+    padding: 2.5rem 1.5625rem 0;
   }
   .hero-content {
-    padding: 16px 25px;
+    padding: 1rem 1.5625rem;
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 68.75rem) {
   .hero {
     align-items: center;
   }
 
   .progress-ctn {
-    padding: 40px 0 0;
+    padding: 2.5rem 0 0;
   }
 
   .hero-content-ctn {
@@ -192,13 +192,13 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 50rem) {
   .hero-content {
-    width: calc(100% - 20px);
+    width: calc(100% - 1.25rem);
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 43.75rem) {
   .hero {
     height: 120vh;
   }

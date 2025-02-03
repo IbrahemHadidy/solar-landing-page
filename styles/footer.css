@@ -1,11 +1,11 @@
 footer {
   display: flex;
-  padding: 80px 150px;
+  padding: 5rem 9.375rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 54px;
+  gap: 3.375rem;
   background: #283646;
-  letter-spacing: 0.3px;
+  letter-spacing: .0187rem;
 }
 
 /************************* First Row *************************/
@@ -20,20 +20,20 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 38px;
+  gap: 2.375rem;
 }
 
 .footer-links-logo {
-  width: 185px;
-  height: 64px;
+  width: 11.5625rem;
+  height: 4rem;
   background: url("../assets/images/placeholder.png") no-repeat center center / cover;  mix-blend-mode: multiply;
 }
 
 .footer-links-list {
   display: flex;
   align-items: flex-start;
-  gap: 40px;
-  min-width: 500px;
+  gap: 2.5rem;
+  min-width: 31.25rem;
 }
 
 .footer-links-list a {
@@ -43,18 +43,18 @@ footer {
 
 .footer-links-list a span {
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5rem;
 }
 
 .footer-links-list a span:hover {
-  text-shadow: 0px 0px 3px #fff;
+  text-shadow: 0rem 0rem .1875rem #fff;
 }
 
 .footer-subscription {
   display: flex;
-  padding: 0px 1px;
+  padding: 0rem .0625rem;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
@@ -62,27 +62,27 @@ footer {
 
 .footer-subscription h4 {
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5rem;
 }
 
 .footer-subscription form {
   display: flex;
-  padding-left: 20px;
+  padding-left: 1.25rem;
   align-items: center;
-  border-radius: 38px;
+  border-radius: 2.375rem;
   border: 1px solid #b3bdc7;
   background: rgba(255, 255, 255, 0.09);
 }
 
 .footer-subscription input {
-  width: 239px;
+  width: 14.9375rem;
   color: #92989f;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.3px;
+  line-height: 1.5rem;
+  letter-spacing: .0187rem;
   border: none;
   background: transparent;
 }
@@ -95,20 +95,20 @@ footer {
 
 .footer-subscription button {
   display: flex;
-  padding: 12px 34px;
+  padding: .75rem 2.125rem;
   align-items: center;
-  gap: 10px;
-  border-radius: 109px;
+  gap: .625rem;
+  border-radius: 6.8125rem;
   background: #ffbb1c;
 }
 
 .footer-subscription button span {
   color: #fff;
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.3px;
+  line-height: 1.5rem;
+  letter-spacing: .0187rem;
 }
 
 .footer-subscription button:hover {
@@ -120,7 +120,7 @@ footer {
 }
 
 .break {
-  height: 2px;
+  height: .125rem;
   width: 100%;
   background-color: #71777d;
   border: none;
@@ -133,14 +133,14 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   color: #92989f;
-  font-size: 12px;
+  font-size: .75rem;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 1rem;
 }
 
 .legal-links {
   font-style: normal;
-  letter-spacing: 0.257px;
+  letter-spacing: .0161rem;
 }
 
 .legal-links a {
@@ -153,14 +153,14 @@ footer {
 
 .copyright {
   text-align: right;
-  letter-spacing: 0.257px;
+  letter-spacing: .0161rem;
 }
 
 /************************* Media Queries *************************/
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 78.125rem) {
   footer {
-    padding: 16px 25px;
-    gap: 20px;
+    padding: 1rem 1.5625rem;
+    gap: 1.25rem;
   }
 
   .footer-content {
@@ -168,14 +168,14 @@ footer {
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 68.75rem) {
   footer {
-    gap: 20px;
+    gap: 1.25rem;
   }
 
   .footer-content {
     flex-direction: column;
-    gap: 32px;
+    gap: 2rem;
   }
 
   .footer-links {
@@ -183,11 +183,11 @@ footer {
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 46.875rem) {
   .footer-legal {
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 2rem;
   }
 
   .footer-links {

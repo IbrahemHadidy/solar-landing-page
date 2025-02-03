@@ -1,34 +1,32 @@
 .cta {
   display: flex;
-  padding: 150px;
+  padding: 9.375rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
+  gap: .625rem;
   background: url("../assets/images/cta-bg.png") no-repeat center center / cover;}
 
 .cta-content {
   display: flex;
-  width: 678px;
+  width: 42.375rem;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 32px;
+  gap: 2rem;
 }
 
 
 /************************* CTA Text *************************/
 .cta-content h1 {
-  
   color: #fff;
-  font-size: 42px;
+  font-size: 2.625rem;
   font-weight: 600;
-  letter-spacing: -0.84px;
+  letter-spacing: -0.0525rem;
 }
 
 .cta-content p {
-  
   color: #fff;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
   line-height: 140%;
 }
@@ -36,20 +34,20 @@
 /************************* CTA Button *************************/
 .cta-btn {
   display: flex;
-  padding: 12px 34px;
+  padding: .75rem 2.125rem;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: .625rem;
   border: none;
-  border-radius: 109px;
+  border-radius: 6.8125rem;
   background: #ffbb1c;
 }
 
 .cta-btn span {
   color: #2a3334;
-  font-size: 14px;
+  font-size: .875rem;
   font-weight: 400;
-  letter-spacing: 1.12px;
+  letter-spacing: .07rem;
   cursor: pointer;
 }
 
@@ -65,35 +63,35 @@
 /************************* Media Queries *************************/
 @media (max-width: 1250px) {
   .cta {
-    padding: 150px 25px;
+    padding: 9.375rem 1.5625rem;
   }
 }
 
 @media (max-width: 768px) {
   .cta {
-    padding: 50px;
+    padding: 3.125rem;
   }
 
   .cta .cta-content {
     width: 100%;
-    gap: 20px;
+    gap: 1.25rem;
   }
 
   .cta .cta-content h1 {
-    font-size: 32px;
-    letter-spacing: -0.64px;
+    font-size: 2rem;
+    letter-spacing: -0.04rem;
   }
 
   .cta .cta-content p {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .cta .cta-content .cta-btn {
-    padding: 10px 20px;
+    padding: .625rem 1.25rem;
   }
 
   .cta .cta-content .cta-btn span {
-    font-size: 12px;
-    letter-spacing: 0.96px;
+    font-size: .75rem;
+    letter-spacing: .06rem;
   }
 }

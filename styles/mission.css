@@ -1,9 +1,9 @@
 .mission {
   display: flex;
-  padding: 80px 150px;
+  padding: 5rem 9.375rem;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 23px;
+  gap: 1.4375rem;
 }
 
 /************************* Mission Content *************************/
@@ -11,33 +11,33 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 23px;
+  gap: 1.4375rem;
 }
 
 /************************* Mission Text *************************/
 .mission-text {
   display: flex;
-  width: 594px;
+  width: 37.125rem;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .mission-text h1 {
   align-self: stretch;
   color: #101828;
-  font-size: 42px;
+  font-size: 2.625rem;
   font-weight: 600;
-  letter-spacing: -0.84px;
+  letter-spacing: -0.0525rem;
 }
 
 .mission-text p {
   align-self: stretch;
   color: #475467;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5rem;
 }
 
 /************************* Mission Points *************************/
@@ -45,28 +45,28 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .mission-point {
   display: flex;
-  width: 498px;
+  width: 31.125rem;
   align-items: flex-start;
-  gap: 10px;
-  line-height: 30px;
+  gap: .625rem;
+  line-height: 1.875rem;
 }
 
 .mission-point-number {
   color: #84bd3a;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
-  letter-spacing: 4px;
+  letter-spacing: .25rem;
 }
 
 .mission-point-text {
-  width: 456px;
+  width: 28.5rem;
   color: #101828;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
@@ -77,21 +77,21 @@
 }
 
 .mission-image > img {
-  width: 469px;
-  height: 552px;
+  width: 29.3125rem;
+  height: 34.5rem;
   flex-shrink: 0;
-  border-radius: 12px;
+  border-radius: .75rem;
 }
 
 .highlight {
   display: flex;
-  height: 160px;
-  width: 200px;
-  padding: 24px 30px;
+  height: 10rem;
+  width: 12.5rem;
+  padding: 1.5rem 1.875rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 28px;
-  border-radius: 12px;
+  gap: 1.75rem;
+  border-radius: .75rem;
   background: #ffbb1c;
   position: absolute;
   bottom: 3%;
@@ -103,24 +103,24 @@
   align-self: stretch;
   color: #2a3334;
   font-family: Akazan;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
-  letter-spacing: 0.937px;
+  letter-spacing: .0586rem;
 }
 
 .highlight img {
-  width: 90px;
-  height: 90px;
+  width: 5.625rem;
+  height: 5.625rem;
 }
 
 /************************* Media Queries *************************/
 /* Tablet */
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 78.125rem) {
   .mission {
-    padding: 16px 25px;
+    padding: 1rem 1.5625rem;
     flex-direction: column;
     align-items: center;
-    gap: 32px;  
+    gap: 2rem;  
   }
 
   .mission-text {
@@ -144,7 +144,7 @@
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 40.625rem) {
     .mission-text {
       width: auto;
     }

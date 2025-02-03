@@ -1,79 +1,79 @@
 .solar-solutions {
   display: flex;
-  padding: 80px 150px;
+  padding: 5rem 9.375rem;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 /************************* Solar Solutions Text *************************/
 .solar-solutions-text {
   display: flex;
-  width: 936px;
+  width: 58.5rem;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .solar-solutions-text h1 {
   color: #101828;
   text-align: center;
-  font-size: 42px;
+  font-size: 2.625rem;
   font-weight: 600;
-  letter-spacing: -0.84px;
+  letter-spacing: -0.0525rem;
 }
 
 .solar-solutions-text p {
   color: #475467;
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5rem;
 }
 
 /************************* Solar Solutions Cards *************************/
 .solar-solutions-cards {
   display: flex;
-  max-width: 1140px;
+  max-width: 71.25rem;
   align-items: flex-start;
-  gap: 32px;
+  gap: 2rem;
 }
 
 .solar-solutions-card {
   display: flex;
-  width: 359px;
+  width: 22.4375rem;
   flex-direction: column;
   align-items: flex-start;
   background: #fff;
-  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0rem .25rem 1.875rem 0rem rgba(0, 0, 0, 0.05);
 }
 
 .solar-solutions-card > img {
-  height: 240px;
+  height: 15rem;
 }
 
 .card-content {
   display: flex;
-  padding: 20px;
+  padding: 1.25rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .card-content h3 {
   color: #101828;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 1.875rem;
 }
 
 .card-content p {
-  height: 72px;
-  width: 327px;
+  height: 4.5rem;
+  width: 20.4375rem;
   color: #475467;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5rem;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
@@ -85,41 +85,41 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: .5rem;
 }
 
 .card-content button span {
   color: #3cab90;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 1.5rem;
 }
 
 .card-content button:hover span {
-  text-shadow: 0px 0px 5px #55eec8;
+  text-shadow: 0rem 0rem .3125rem #55eec8;
 }
 
 .card-content button img {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 /************************* Media Queries *************************/
 /* Media Query for Mobile Devices */
-@media (max-width: 1250px) {
+@media (max-width: 78.125rem) {
   .solar-solutions {
-    padding: 16px 25px;
+    padding: 1rem 1.5625rem;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 75rem) {
   .solar-solutions-cards {
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 68.75rem) {
   .solar-solutions-text {
     width: 100%;
   }
