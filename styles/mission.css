@@ -52,7 +52,7 @@
   display: flex;
   width: 31.125rem;
   align-items: flex-start;
-  gap: .625rem;
+  gap: 0.625rem;
   line-height: 1.875rem;
 }
 
@@ -60,7 +60,7 @@
   color: #84bd3a;
   font-size: 1.25rem;
   font-weight: 700;
-  letter-spacing: .25rem;
+  letter-spacing: 0.25rem;
 }
 
 .mission-point-text {
@@ -80,7 +80,7 @@
   width: 29.3125rem;
   height: 34.5rem;
   flex-shrink: 0;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
 }
 
 .highlight {
@@ -91,7 +91,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 1.75rem;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   background: #ffbb1c;
   position: absolute;
   bottom: 3%;
@@ -105,7 +105,7 @@
   font-family: Akazan;
   font-size: 1.125rem;
   font-weight: 400;
-  letter-spacing: .0586rem;
+  letter-spacing: 0.0586rem;
 }
 
 .highlight img {
@@ -115,12 +115,12 @@
 
 /************************* Media Queries *************************/
 /* Tablet */
-@media screen and (max-width: 78.125rem) {
+@media screen and (max-width: 1250px) {
   .mission {
     padding: 1rem 1.5625rem;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;  
+    gap: 2rem;
   }
 
   .mission-text {
@@ -144,17 +144,42 @@
   }
 }
 
-@media screen and (max-width: 40.625rem) {
-    .mission-text {
-      width: auto;
-    }
+@media screen and (max-width: 750px) {
+  .mission {
+    padding: 0.5rem 0.75rem;
+  }
 
-    .mission-image {
-      width: 80%;
-    }
+  .mission-text {
+    width: auto;
+  }
 
-    .mission-image > img {
-      width: 100%;
-      height: auto;
-    }
+  .mission-image {
+    width: 80%;
+  }
+
+  .mission-image > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .highlight {
+    display: flex;
+    height: 8rem;
+    width: 9rem;
+    padding: 1rem 1.3rem;
+    flex-direction: column;
+    align-items: flex-start;
+    left: 20%;
+    gap: 1rem;
+  }
+
+  .highlight p {
+    font-size: 1rem;
+  }
+
+  .highlight img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
 }
+

@@ -100,17 +100,17 @@
 
 .indicator {
   width: 4.5rem;
-  height: .5rem;
+  height: 0.5rem;
   display: flex;
   justify-content: space-between;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .indicator-dot {
-  width: .5rem;
-  height: .5rem;
+  width: 0.5rem;
+  height: 0.5rem;
   flex-shrink: 0;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background: #d9d9d9;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -137,7 +137,7 @@
   width: 70%;
   width: 100%;
   position: absolute;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .testimonials-carousel-bottom-left.active {
@@ -159,7 +159,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: .5625rem;
+  gap: 0.5625rem;
 }
 
 .testimonials-carousel-bottom-left-text h5 {
@@ -214,20 +214,19 @@
 }
 
 /************************* Media Queries *************************/
-@media screen and (max-width: 87.5rem) {
+@media screen and (max-width: 1400px) {
   .testimonials {
     flex-direction: column;
   }
-
 }
 
-@media screen and (max-width: 78.125rem) {
+@media screen and (max-width: 1250px) {
   .testimonials {
     padding: 1rem 1.5625rem;
   }
 }
 
-@media screen and (max-width: 50rem) {
+@media screen and (max-width: 800px) {
   .what-they-say-text-ctn {
     height: 18.75rem;
   }
@@ -239,5 +238,65 @@
   .testimonials-carousel-bottom-right {
     padding-top: 3.75rem;
     align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .testimonials {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .testimonials-text {
+    width: 100%;
+  }
+
+  .testimonials-carousel {
+    padding: 1rem 0.75rem;
+  }
+
+  .testimonials-carousel-top {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0;
+    align-self: unset;
+    width: 100%;
+  }
+
+  .what-they-say {
+    gap: 1rem;
+  }
+
+  .what-they-say-text-ctn {
+    height: 35vh;
+    width: 90vw;
+    align-items: center;
+  }
+
+  .person-ctn {
+    align-self: flex-start;
+  }
+
+  .testimonials-carousel-bottom-right {
+    padding-top: 3.75rem;
+    align-self: flex-end;
+  }
+
+  .testimonials-carousel-bottom-left {
+    width: 100%;
+  }
+
+  .testimonials-carousel-bottom-left img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+  }
+
+  .testimonials-carousel-bottom-left-text h5 {
+    font-size: 0.875rem;
+  }
+
+  .testimonials-carousel-bottom-left-text p {
+    font-size: 0.875rem;
   }
 }

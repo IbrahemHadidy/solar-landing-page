@@ -106,21 +106,39 @@
 
 /************************* Media Queries *************************/
 /* Media Query for Mobile Devices */
-@media (max-width: 78.125rem) {
+@media (max-width: 1250px) {
   .solar-solutions {
     padding: 1rem 1.5625rem;
   }
 }
 
-@media (max-width: 75rem) {
+@media (max-width: 1200px) {
   .solar-solutions-cards {
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
 }
 
-@media screen and (max-width: 68.75rem) {
+@media screen and (max-width: 1100px) {
   .solar-solutions-text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .solar-solutions {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .solar-solutions-card {
+    width: auto;
+  }
+
+  .card-content {
+    padding: 1rem;
+  }
+
+  .card-content p {
     width: 100%;
   }
 }
