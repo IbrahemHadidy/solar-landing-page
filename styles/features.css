@@ -196,6 +196,12 @@
     gap: 1rem;
   }
 
+  .features-card-text {
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+  
   .features-card-image {
     width: 100%;
   }

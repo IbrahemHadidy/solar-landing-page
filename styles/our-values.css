@@ -105,6 +105,8 @@
     height: auto;
     padding: 1rem;
     gap: 1rem;
+    align-items: center;
+    text-align: center;
   }
 
   .our-values-card img {
