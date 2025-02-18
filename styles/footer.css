@@ -181,6 +181,10 @@ footer {
   .footer-links {
     align-items: center;
   }
+
+  .footer-subscription {
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 750px) {

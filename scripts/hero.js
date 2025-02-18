@@ -28,7 +28,7 @@ function nextHero() {
       rgba(0, 0, 0, 0.7) 2.2%,
       rgba(0, 0, 0, 0.18) 58.17%
     ),
-    url("../assets/images/hero-bg-${heroSlideNumber}.webp") center / cover no-repeat`;
+    url("assets/images/hero-bg-${heroSlideNumber}.webp") center / cover no-repeat`;
 
   // Update progress bar
   document
@@ -38,5 +38,3 @@ function nextHero() {
 }
 
 setInterval(nextHero, 8000);
-
-background: ;
