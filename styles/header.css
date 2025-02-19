@@ -124,6 +124,8 @@ nav a:hover > span {
     top: 0;
     right: -100%;
     width: 70%;
+    min-width: unset;
+    max-width: 20rem;
     height: 100vh;
     background: #0b9586;
     box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.2);
